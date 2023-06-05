@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bar</title>
+    <style>
+        /* Add these styles to your existing CSS */
+
+        .area {
+            display: flex;
+            flex-direction:column;
+            align-items:left;
+            padding-right: 80%;
+            /* padding-bottom: 100%; */
+        }
+
+        .main-menu {
+            background-color: #eaece6;
+            padding: 20px;
+        }
+
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-menu ul li {
+            margin-bottom: 10px;
+        }
+
+        .main-menu a {
+            color: #0b0202;
+            text-decoration: none;
+            display: block;
+        }
+
+        .main-menu a:hover {
+            color: #2facc5f3;
+        }
+
+        .main-menu i {
+            margin-right: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* Responsive styles for screens up to 768px */
+            .main-menu {
+                padding: 10px;
+            }
+
+            .main-menu ul li {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="area">
+        <nav class="main-menu">
+            <header>
+                <ul>
+                    
+                    <li class="has-subnav">
+                        <a href="leadsList"> <i class="fa fa-list fa-2x"></i>
+                            <span class="nav-text">
+                                <img src="images/list.png" height="15px" width="15px" alt="" srcset=""> List
+                                of Leads
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="contactsList"> <i class="fa fa-phone"></i>
+                            <span class="nav-text">
+                                <img src="images/contact.png" height="15px" width="15px" alt="" srcset=""> List of Contacts
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li class="has-subnav">
+                        <a href="/">
+                            <span class="nav-text">
+                                <img src="images/create lead.png" height="15px" width="15px" alt="" srcset="">Create Lead
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li class="has-subnav">
+                        <a href="billsList"> <i class="fa fa-money"></i>
+                            <span class="nav-text">
+                                <img src="images/invoice.png" height="15px" width="15px" alt=""> List of Invoices </span>
+                        </a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="search"><i class="fa fa-search"></i>
+                            <span class="nav-text">
+                                <img src="images/search.png" height="15px" width="15px" alt=""> Search
+                            </span>
+                        </a>
+                    </li>
+                    <li class="has-subnav">
+                        <a href="javanotes"> <i class="fa fa-book"></i>
+                            <span class="nav-text">
+                                <img src="images/notebook.png" height="15px" width="15px" alt=""> JAVA Notes by _M$A_
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </nav>
+    </div>
+
+    <div class="area">
+        <nav class="main-menu">
+            <footer>
+                <ul class="logout">
+                    <li><a href="#"> <i class="fa fa-power-off fa-2x"></i>
+                            <span class="nav-text">
+                                <img src="images/logout.png" height="15px" width="15px" alt=""> Logout
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+        </nav>
+    </div>
+</body>
+
+</html>
